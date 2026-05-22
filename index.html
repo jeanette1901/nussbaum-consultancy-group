@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nussbaum Consultancy Group</title>
+    <meta name="viewport" content="width=1400, initial-scale=0.25, maximum-scale=1">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <img src="logo.jpg" class="top-right-mini" alt="Logo" />
+
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" onclick="showSection('home-video')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="openBook('about')"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="openBook('services')"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="openBook('training')"
+              >Training Program</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="showSection('contact-video')"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME VIDEO -->
+    <section id="home-video" class="content-section">
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source src="Homevideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- CONTACT VIDEO -->
+    <section id="contact-video" class="content2-section">
+      <div class="video2-container">
+        <video autoplay muted loop playsinline>
+          <source src="Contactvideo.mp4" type="video/mp4" />
+        </video>
+
+       <!-- TEXT 1: Email -->
+<div class="text email-text">
+  <span class="label">NC@NussbaumConsultancyGroup.com</span>
+  <span class="copy-icon" onclick="copyText('NC@NussbaumConsultancyGroup.com')"></span>
+  <span class="tooltip">Copy</span>
+</div>
+
+<!-- TEXT 2: Telefon -->
+<div class="text phone-text">
+  <span class="label">+40 735 148 200</span>
+  <span class="copy-icon" onclick="copyText('+40 735 148 200')"></span>
+  <span class="tooltip">Copy</span>
+</div>
+
+<!-- TEXT 3: LinkedIn -->
+<div class="text linkedin-text">
+  <span class="label">www.linkedin.com/in/nussbaum-consultancy-group-075937410</span>
+  <span class="copy-icon" onclick="copyText('www.linkedin.com/in/nussbaum-consultancy-group-075937410')"></span>
+  <span class="tooltip">Copy</span>
+</div>
+
+
+    </section>
+
+    <!-- ============================================================
+     BOOK OVERLAY PARTNERS
+     ============================================================ -->
+    <div id="book-overlay-about" class="overlay" style="display: none">
+      <div class="book">
+        <button class="close-btn" onclick="closeBook('about')">x</button>
+
+        <div class="book-page left-page">
+          <h2 class="book-title">Global Consultancy Group Overview</h2>
+          <ul class="topic-list">
+            <li onclick="showContent('a1', 'about')">About Us</li>
+            <li onclick="showContent('a2', 'about')">
+              Our Mission as Global Footprint
+            </li>
+            <li onclick="showContent('a3', 'about')">
+              Value for Customers & Supplier
+            </li>
+            <li onclick="showContent('a4', 'about')">Why Work With Us?</li>
+            <li onclick="showContent('a5', 'about')">
+              Next Steps for Business collaboration
+            </li>
+          </ul>
+        </div>
+
+        <div class="book-page right-page">
+          <div id="display-area-about">
+            <p class="placeholder">Please select a topic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     BOOK OVERLAY SERVICES
+     ============================================================ -->
+    <div id="book-overlay-services" class="overlay" style="display: none">
+      <div class="book">
+        <button class="close-btn" onclick="closeBook('services')">×</button>
+
+        <div class="book-page left-page">
+          <h2 class="book-title">Core Services</h2>
+          <ul class="topic-list">
+            <li onclick="showContent('s1', 'services')">
+              Procurement & Sourcing Excellence
+            </li>
+            <li onclick="showContent('s2', 'services')">
+              Operational & Supply Chain Optimization
+            </li>
+            <li onclick="showContent('s3', 'services')">
+              Strategic & Business Advisory
+            </li>
+            <li onclick="showContent('s4', 'services')">
+              Crisis Services for Insolvencies & Business Terminations
+            </li>
+            <li onclick="showContent('s5', 'services')">Training Program</li>
+          </ul>
+        </div>
+
+        <div class="book-page right-page">
+          <div id="display-area-services">
+            <p class="placeholder">Please select a topic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     BOOK OVERLAY TRAINING PROGRAM
+     ============================================================ -->
+    <div id="book-overlay-training" class="overlay" style="display: none">
+      <div class="book">
+        <button class="close-btn" onclick="closeBook('training')">×</button>
+
+        <div class="book-page left-page">
+          <h2 class="book-title">Trainings</h2>
+          <ul class="topic-list">
+            <li onclick="showContent('t1', 'training')">
+              Supplier Scouting , qualification & Global sourcing Excellence
+            </li>
+            <li onclick="showContent('t2', 'training')">
+              RFQ Process Masterclass — Full Strategy, Execution & Benchmarking
+            </li>
+            <li onclick="showContent('t3', 'training')">
+              Operational Workflow Improvement & Process Optimization
+            </li>
+            <li onclick="showContent('t4', 'training')">
+              Cost - Down Workshops & Negotiation Strategy Training
+            </li>
+            <li onclick="showContent('t5', 'training')">
+              Crisis Management: Insolvency, Supplier Failure & Business
+              Termination
+            </li>
+            <li onclick="showContent('t6', 'training')">
+              Merger & Acquisition / Business Acquisition Assessment &
+              Integration
+            </li>
+            
+            <li onclick="showContent('t7', 'training')">
+              Strategic Purchasing Excellence & Market Trend
+            </li>
+            <li onclick="showContent('t8', 'training')">
+              Leadership, Project Management & Cross - Functional Collaboration
+            </li>
+            <li onclick="showContent('t9', 'training')">
+              Corporate Sales & Commercial Excellence Training
+            </li>
+          </ul>
+        </div>
+
+        <div class="book-page right-page">
+          <div id="display-area-training">
+            <p class="placeholder">Please select a topic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
